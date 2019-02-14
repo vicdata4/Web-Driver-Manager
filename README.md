@@ -14,25 +14,26 @@ mvn exec:java@wdmanager -Dexec.args="all c"
 
 
 Maven plugin:
+```xml
 
 <plugin>
-		<groupId>org.codehaus.mojo</groupId>
-		<artifactId>exec-maven-plugin</artifactId>
-		<version>1.6.0</version>
-		<executions>
-			<execution>
-				<id>wdmanager</id>
-				<goals>
-					<goal>java</goal>
-				</goals>
-				<configuration>
-					<mainClass>org.tests.WebDriverManager</mainClass>
-					<classpathScope>test</classpathScope>
-					<cleanupDaemonThreads>false</cleanupDaemonThreads>
-				</configuration>
-			</execution>
-		</executions>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>exec-maven-plugin</artifactId>
+	<version>1.6.0</version>
+	<executions>
+		<execution>
+			<id>wdmanager</id>
+			<goals>
+				<goal>java</goal>
+			</goals>
+			<configuration>
+				<mainClass>org.tests.WebDriverManager</mainClass>
+				<classpathScope>test</classpathScope>
+				<cleanupDaemonThreads>false</cleanupDaemonThreads>
+			</configuration>
+		</execution>
+	</executions>
 </plugin>
-
+```
 
 
